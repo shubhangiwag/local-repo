@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php"><pre>
+ <fieldset>
+    <legend>Personal information:</legend>
+
+  First name:    <input type="text" name="firstname">
+  
+  Last name:     <input type="text" name="lastname">
+  
+  E-mail:       <input type="email" name="email">
+  
+  Gender:
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other  
+  
+  DOB:
+  <input type="date" name="bday">
+
+  Education:
+   <select name="Degree">
+    <option value="BE">BE</option>
+    <option value="BSc">BSc</option>
+    <option value="BCA">BCA</option>
+    <option value="MCA">MCA</option>
+  </select>
+  
+  Describe Yourself:
+   <textarea name="message" rows="3" cols="30"></textarea>
+  
+  Select Category:
+   <input list="Category" name="Category">
+   <datalist id="Category">
+    <option value="OBC">
+    <option value="OPEN">
+    <option value="SC">
+    <option value="ST">
+  </datalist>
+  
+  Select technologies you know:
+  <input type="checkbox" name="C" value="C">C
+
+  <input type="checkbox" name="CPP" value="CPP">CPP  
+  
+  Experience(between 1 and 5):
+  <input type="number" name="Experience" min="1" max="5">
+  <input type="submit">
+  
+  Select your favorite color:
+  <input type="color" name="favcolor" value="#ff0000">
+  
+  Button:  
+   <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+   <input type="submit" value="Submit">
+   
+  
+
+  </fieldset>
+  
+</form> </pre>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
